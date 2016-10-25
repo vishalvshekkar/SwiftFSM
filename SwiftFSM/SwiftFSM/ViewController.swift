@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  SwiftFSM
 //
-//  Created by Vishal V Shekkar on 25/10/16.
+//  Created by Vishal V. Shekkar on 25/10/16.
 //  Copyright © 2016 Vishal V. Shekkar. All rights reserved.
 //
 
