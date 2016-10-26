@@ -1,5 +1,3 @@
-# SwiftFSM
-
 ![alt tag](https://raw.githubusercontent.com/vishalvshekkar/SwiftFSM/master/SwiftFSMBannerFinal.png)
 
 I needed a finite state machine for a game I was developing in Swift 3. I checked out other FSMs developed in Swift, but, they were either heavy or were not yet ported to Swift 3. Hence, SwiftFSM came about.
