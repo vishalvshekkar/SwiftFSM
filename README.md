@@ -6,12 +6,12 @@ I intended SwiftFSM to be a single-file implementation. I also needed it to scal
 
 # Features
 
-- Enums used for states and triggers.
-- Closures bring about cleaner code.
-- Callback for state changes.
-- Callback before a state change to optionally prevent a state change.
-- Logging with custom methods possible.
-- The schema object can be created externally by conforming to a protocol. This lets you add custom functionality to the schema object.
+- **Type Agnostic** - States and Triggers could be represented by any type. Enums, structs (Int, String...) and so on. This gives a lot of leeway to represent states and triggers based on your requirement. All the FSM cares about is if you are able to distinguish between two state or two trigger objects.
+- **Closures** - Closures are used instead of delegates to bring about cleaner and a more readable code.
+- **Alerts** - Callback for state changes.
+- **Allows Exceptions** - Callback before a state change to optionally block a state change.
+- **Freedom in Logging** - Logging with custom methods possible.
+- **Freedom in Schema Object** - The schema object can be created externally by conforming to a protocol. This lets you add custom functionality to the schema object.
 
 # Installation
 
