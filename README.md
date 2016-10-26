@@ -16,3 +16,7 @@ I intended SwiftFSM to be a single-file implementation. I also needed it to scal
 # Installation
 
 Download the .zip and extract the files. Open the project in Xcode 8+. Check out the Turnstile example demonstrated in the project by running the project. Drag and Copy the file 'SwiftFSM.swift' to your own project and use it.
+
+# Further Reading
+
+https://medium.com/sift-through-swift/finite-state-machine-in-swift-ba0958bca34f#.rv8pfot27
