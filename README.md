@@ -1,5 +1,7 @@
 # SwiftFSM
 
+![alt tag](https://raw.githubusercontent.com/vishalvshekkar/SwiftFSM/blob/master/SwiftFSMBanner.png)
+
 I needed a finite state machine for a game I was developing in Swift 3. I checked out other FSMs developed in Swift, but, they were either heavy or were not yet ported to Swift 3. Hence, SwiftFSM came about.
 
 I intended SwiftFSM to be a single-file implementation. I also needed it to scale up to the needs of a complex FSM that my game required. SwiftFSM could achieve all that and still be generalized to support all kinds of states and triggers only because of the power of Swift's protocols and generics.
