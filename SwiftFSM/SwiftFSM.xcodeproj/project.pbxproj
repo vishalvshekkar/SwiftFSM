@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D05E835202B4DD6000E0EFF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C9B703E11DBFCD320012912B /* SwiftFSM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftFSM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B703E41DBFCD320012912B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9B703E61DBFCD320012912B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +41,7 @@
 		C9B703D81DBFCD310012912B = {
 			isa = PBXGroup;
 			children = (
+				3D05E835202B4DD6000E0EFF /* LICENSE */,
 				C9B703E31DBFCD320012912B /* SwiftFSM */,
 				C9B703E21DBFCD320012912B /* Products */,
 			);
