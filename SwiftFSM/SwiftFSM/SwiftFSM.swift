@@ -50,7 +50,7 @@ public final class SwiftFSM<Schema: SwiftFSMSchemaSpecification> {
     ///The schema object is stored in this variable
     private let schema: Schema
     
-    ///An optional closure that will be executed before transiting the state due to a trigger. The state will transit if the closure returns `true`. Otherwise, the FSM remains unchanged. If the closure itself is `nil`, the state change will happen as directed by the schema.
+    ///An optional closure that will be executed before transiting the state due to a trigger. The state will transition if the closure returns `true`. Otherwise, the FSM remains unchanged. If the closure itself is `nil`, the state change will happen as directed by the schema.
     public var shouldMachineTransitState: ((_ fromState: Schema.State, _ trigger: Schema.Trigger, _ toState: Schema.State) -> (Bool))?
     
     ///An optional closure that will be executed when a state transition occurs due to a trigger. The execution of this closure is subject to the result of `shouldMachineTransitState` if it's not a `nil`. Use this closure to perform actions based on any state changes.
