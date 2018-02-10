@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     ///A `typealias` used to keep line sizes small in the declarations of `turnstileMachineSchema` and `turnstileMachine`. It's not necessary to do this. This is merely done for readability.
     private typealias TurnstileMachineSchema = SwiftFSMSchema<TurnstileState, TurnstileTrigger>
     
-    ///A `SwiftFSMSchema` object with asociated types - `TurnstileState` and `TurnstileTrigger`
+    ///A `SwiftFSMSchema` object with associated types - `TurnstileState` and `TurnstileTrigger`
     private var turnstileMachineSchema = TurnstileMachineSchema(initialState: .locked) { (presentState, trigger) -> ViewController.TurnstileState in
         var toState: TurnstileState
         
