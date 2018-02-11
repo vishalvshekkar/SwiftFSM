@@ -16,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D05E835202B4DD6000E0EFF /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3D05E839202B4EDB000E0EFF /* Shared.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Shared.xcconfig; sourceTree = "<group>"; };
+		3D05E83B202B50D6000E0EFF /* DEVELOPMENT_TEAM.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEVELOPMENT_TEAM.xcconfig; sourceTree = "<group>"; };
 		C9B703E11DBFCD320012912B /* SwiftFSM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftFSM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B703E41DBFCD320012912B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C9B703E61DBFCD320012912B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,9 +40,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D05E836202B4EDB000E0EFF /* Xcode-config */ = {
+			isa = PBXGroup;
+			children = (
+				3D05E83B202B50D6000E0EFF /* DEVELOPMENT_TEAM.xcconfig */,
+				3D05E839202B4EDB000E0EFF /* Shared.xcconfig */,
+			);
+			name = "Xcode-config";
+			path = "../Xcode-config";
+			sourceTree = "<group>";
+		};
 		C9B703D81DBFCD310012912B = {
 			isa = PBXGroup;
 			children = (
+				3D05E835202B4DD6000E0EFF /* LICENSE */,
+				3D05E836202B4EDB000E0EFF /* Xcode-config */,
 				C9B703E31DBFCD320012912B /* SwiftFSM */,
 				C9B703E21DBFCD320012912B /* Products */,
 			);
@@ -170,6 +185,7 @@
 /* Begin XCBuildConfiguration section */
 		C9B703F11DBFCD320012912B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D05E839202B4EDB000E0EFF /* Shared.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -220,6 +236,7 @@
 		};
 		C9B703F21DBFCD320012912B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D05E839202B4EDB000E0EFF /* Shared.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -306,6 +323,7 @@
 				C9B703F51DBFCD320012912B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
