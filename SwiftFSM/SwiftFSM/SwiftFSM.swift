@@ -31,8 +31,8 @@ struct SwiftFSMSchema<S, T>: SwiftFSMSchemaSpecification {
     typealias State = S
     typealias Trigger = T
     
-    var initialState: State
-    var transitionLogic: (_ state: State, _ trigger: Trigger) -> State
+    let initialState: State
+    let transitionLogic: (_ state: State, _ trigger: Trigger) -> State
     
     init(initialState: State, transitionLogic: @escaping (State, Trigger) -> State) {
         self.initialState = initialState
