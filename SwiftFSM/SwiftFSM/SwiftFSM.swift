@@ -51,10 +51,10 @@ final class SwiftFSM<Schema: SwiftFSMSchemaSpecification> {
     private let schema: Schema
     
     ///An optional closure that will be executed before transiting the state due to a trigger. The state will transition if the closure returns `true`. Otherwise, the FSM remains unchanged. If the closure itself is `nil`, the state change will happen as directed by the schema.
-    var shouldMachineTransitState: ((_ fromState: Schema.State, _ trigger: Schema.Trigger, _ toState: Schema.State) -> (Bool))?
+    var shouldMachineTransitState: ((_ fromState: Schema.State, _ trigger: Schema.Trigger, _ toState: Schema.State) -> Bool)?
     
     ///An optional closure that will be executed when a state transition occurs due to a trigger. The execution of this closure is subject to the result of `shouldMachineTransitState` if it's not a `nil`. Use this closure to perform actions based on any state changes.
-    var machineDidTransitState: ((_ fromState: Schema.State, _ trigger: Schema.Trigger, _ toState: Schema.State) -> ())?
+    var machineDidTransitState: ((_ fromState: Schema.State, _ trigger: Schema.Trigger, _ toState: Schema.State) -> Void)?
     
     ///This `enum` represents the loggin preference. It defaults to `.logging(nil)` which uses a `print` statement to log.
     var logging = SwiftFSMLogType.logging(nil)
@@ -115,7 +115,7 @@ enum SwiftFSMLogType {
     case noLogging
     
     ///Logs every state change to the console. If the closure is `nil`, logging is done using a `print` statement. Otherwise, a `String` containing the log is passed to the closure as a parameter and that can be used to log to the console using the users' preferred means.
-    case logging(((_ log: String) -> ())?)
+    case logging(((_ log: String) -> Void)?)
 }
 
 ///Used internally to specify the status of transition. Aids in providing log messages based on transition status.
