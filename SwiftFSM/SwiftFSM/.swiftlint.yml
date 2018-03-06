@@ -1,0 +1,43 @@
+disabled_rules:
+# - trailing_newline
+# - opening_brace
+# - empty_count
+# - comma
+# - colon
+- force_cast
+- type_name
+# - variable_name_min_length
+# - trailing_semicolon
+- force_try
+- function_body_length
+- nesting
+- variable_name
+- conditional_binding_cascade
+# - variable_name_max_length
+- operator_whitespace
+# - control_statement
+# - legacy_constant
+- line_length
+# - return_arrow_whitespace
+- trailing_whitespace
+# - closing_brace
+# - statement_position
+- type_body_length
+- todo
+# - legacy_constructor
+- valid_docs
+# - missing_docs
+- file_length
+# - leading_whitespace
+- cyclomatic_complexity
+# - custom_rules
+- function_parameter_count
+# - legacy_cggeometry_functions
+- unused_closure_parameter
+trailing_whitespace:
+  ignores_empty_lines: true
+included:
+ - Source
+ - Tests
+excluded:
+ - Source/ThirdParty
