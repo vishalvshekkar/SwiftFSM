@@ -28,3 +28,8 @@
 // There you can set the pull-down menus in the
 // “Based on Configuration File” column to “Shared”.
 // Done.
+
+// Don’t forget to add the DEVELOPMENT_TEAM.xcconfig file to your .gitignore:
+// # User-specific xcconfig files
+// Xcode-config/DEVELOPMENT_TEAM.xcconfig
+
