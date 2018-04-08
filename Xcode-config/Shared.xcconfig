@@ -33,3 +33,6 @@
 // # User-specific xcconfig files
 // Xcode-config/DEVELOPMENT_TEAM.xcconfig
 
+// You can now remove the “DevelopmentTeam = AB1234C5DE;” entries from the
+// .xcodeproj/project.pbxproj if you want to.
+
