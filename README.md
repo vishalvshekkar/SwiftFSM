@@ -31,7 +31,7 @@ DEVELOPMENT_TEAM = [Your TeamID]
 
 The `DEVELOPMENT_TEAM.xcconfig` file should not be added to any git commit. The `.gitignore` file will prevent it from getting committed to the repository. 
 
-See the file `Xcode-Config/Shared.xcconfig` for a more detailed explanation of how to set this up for this or for your own projects. 
+See the file `Xcode-config/Shared.xcconfig` for a more detailed explanation of how to set this up for this or for your own projects. 
 
 A big thank-you goes to [Jeff Johnson](https://github.com/lapcat/Bonjeff) who has come up with this way of handling the `DEVELOPMENT_TEAM` issue for open-source projects. 
 
