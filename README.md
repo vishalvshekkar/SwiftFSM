@@ -21,9 +21,9 @@ Download the .zip and extract the files. Open the project in Xcode 8+. Check out
 
 Yes. This is a wall of text, but it’s a pretty simple solution for an annoying problem.
 
-The example project is configured to code sign the app. For code signing, you need a valid Apple Developer code signing certificate in your keychain, and you need to specify your Apple Developer Program TeamID in the build settings of an Xcode project. 
+The example project is configured to code sign the app. For code signing, you need a valid Apple Developer code signing certificate in your keychain, and you need to specify your Apple Developer Program TeamID in the build settings of an Xcode project. The former should be covered by adding your developer account to Xcode Preferences > Accounts > Apple ID.
 
-To do this, create a new file `DEVELOPMENT_TEAM.xcconfig` in your working copy and add the following build setting to the file:
+To add the TeamID to the project, create a new file `DEVELOPMENT_TEAM.xcconfig` in the `Xcode-config` folder of your working copy and add the following build setting to the file:
 
 ```
 DEVELOPMENT_TEAM = [Your TeamID]
@@ -31,7 +31,7 @@ DEVELOPMENT_TEAM = [Your TeamID]
 
 The `DEVELOPMENT_TEAM.xcconfig` file should not be added to any git commit. The `.gitignore` file will prevent it from getting committed to the repository. 
 
-See the file `Xcode-Config/Shared.xcconfig` for a more detailed explanation of how to set this up for this or for your own projects. 
+See the file `Xcode-config/Shared.xcconfig` for a more detailed explanation of how to set this up for this or for your own projects. 
 
 A big thank-you goes to [Jeff Johnson](https://github.com/lapcat/Bonjeff) who has come up with this way of handling the `DEVELOPMENT_TEAM` issue for open-source projects. 
 

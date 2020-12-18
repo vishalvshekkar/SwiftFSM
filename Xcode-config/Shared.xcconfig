@@ -1,7 +1,7 @@
 #include "DEVELOPMENT_TEAM.xcconfig"
 
 // Create the file DEVELOPMENT_TEAM.xcconfig
-// in the "Xcode-Config" directory within the project directory
+// in the "Xcode-config" directory within the project directory
 // with the following build setting:
 // DEVELOPMENT_TEAM = [Your TeamID]
 
@@ -16,7 +16,7 @@
 // It should be listed under “Team ID”.
 
 // To set this system up for your own project,
-// copy the "Xcode-Config" directory there,
+// copy the "Xcode-config" directory there,
 // add it to your Xcode project,
 // navigate to your project settings
 // (root icon in the Xcode Project Navigator)
@@ -28,3 +28,11 @@
 // There you can set the pull-down menus in the
 // “Based on Configuration File” column to “Shared”.
 // Done.
+
+// Don’t forget to add the DEVELOPMENT_TEAM.xcconfig file to your .gitignore:
+// # User-specific xcconfig files
+// Xcode-config/DEVELOPMENT_TEAM.xcconfig
+
+// You can now remove the “DevelopmentTeam = AB1234C5DE;” entries from the
+// .xcodeproj/project.pbxproj if you want to.
+

@@ -61,7 +61,7 @@ class ViewController: UIViewController {
         turnstileMachine = SwiftFSM(schema: turnstileMachineSchema)
         
         //Setting the logging preference. This step is optional.
-        turnstileMachine?.logging = .logging({(log: String) -> () in
+        turnstileMachine?.logging = .logging({ log in
             print(log) //Use any logging method you choose in this closure
         })
         
@@ -71,7 +71,7 @@ class ViewController: UIViewController {
         }
         
         //Defining the `machineDidTransitState` closure of the FSM. Do this only if you need a trigger for all state changes. This step is optional.
-        turnstileMachine?.machineDidTransitState = { (_ fromState: TurnstileState, _ trigger: TurnstileTrigger, _ toState: TurnstileState) -> () in
+        turnstileMachine?.machineDidTransitState = { (_ fromState: TurnstileState, _ trigger: TurnstileTrigger, _ toState: TurnstileState) in
             self.stateLabel.text = "\(toState)"
         }
     }
@@ -87,4 +87,3 @@ class ViewController: UIViewController {
     }
 
 }
-
